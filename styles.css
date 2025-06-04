@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* VVVIP: need to set the height of the container to 100% viewport height */
+}
+
+.row-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-items: center;
+}
+
+.row-item {
+    border: 1px solid black;
+    flex: 1;
+    align-self: stretch;
+}
