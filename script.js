@@ -27,11 +27,16 @@ function drawGrid(x) {
     }
 }
 
+function erase() {
+    container.replaceChildren();
+}
+
 function getInput() {
     let x = "";
     do {
         x = prompt("Enter number of squares per size. Must be < 100.");
     } while(x > 100);
+    erase();
     drawGrid(x);
 }
 
